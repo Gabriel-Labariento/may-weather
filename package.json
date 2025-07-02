@@ -12,8 +12,28 @@
     "html-webpack-plugin": "^5.6.3",
     "prettier": "3.4.2",
     "style-loader": "^4.0.0",
-    "webpack": "^5.97.1",
+    "webpack": "^5.99.9",
     "webpack-cli": "^6.0.1",
-    "webpack-dev-server": "^5.2.0"
-  }
+    "webpack-dev-server": "^5.2.2"
+  },
+  "name": "may-weather",
+  "version": "1.0.0",
+  "main": "webpack.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "start": "webpack serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gabriel-Labariento/may-weather.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Gabriel-Labariento/may-weather/issues"
+  },
+  "homepage": "https://github.com/Gabriel-Labariento/may-weather#readme",
+  "description": ""
 }

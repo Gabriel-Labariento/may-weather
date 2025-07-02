@@ -28,7 +28,13 @@ module.exports = {
       {
         test: /\.(png|svg|jpg|jpeg|gif)$/i,
         type: "asset/resource",
-      }      
+      }   
     ],
   },
+  devServer: {
+    static: './dist',
+    port: 8080,
+    open: true,
+  }
+
 };
