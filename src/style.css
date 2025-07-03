@@ -93,18 +93,22 @@ button:hover {
 .weather-info-grid {
   display: grid;
   grid-template-areas:
-    ". icon"
+    "icon icon"
     "address address"
     "temp description"
     "forecast forecast";
   gap: 0.5rem;
   margin-top: 0.5rem;
+  justify-content: center;
+  justify-items: center;
 }
 
 .main-icon {
   grid-area: icon;
   height: 64px;
-  width: 64px;
+  width: 64px;  
+  display: flex;
+  justify-content: center;
 }
 
 .full-address {
@@ -151,15 +155,43 @@ button:hover {
 .forecast-day {
   background: white;
   border-radius: 10px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   padding: 0.75rem;
   text-align: center;
   font-size: 0.9rem;
   color: #444;
   transition: transform 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: stretch;
 }
 
 .forecast-day:hover {
   transform: translateY(-4px);
   background-color: #f1f5f9;
+}
+
+.unit-toggle {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.toggle-btn {
+  padding: 0.5rem 1rem;
+  background: #f1f5f9;
+  color: #1f2937;
+  border: 2px solid #cbd5e1;
+  border-radius: 10px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.toggle-btn:hover {
+  background: #e0e7ff;
+  border-color: #818cf8;
+  color: #3730a3;
 }
