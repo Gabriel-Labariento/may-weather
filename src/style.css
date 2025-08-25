@@ -196,3 +196,8 @@ button:hover {
   border-color: #818cf8;
   color: #3730a3;
 }
+
+#location-form {
+  display: flex;
+  flex-direction: column;
+}
